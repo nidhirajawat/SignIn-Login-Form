@@ -8,6 +8,21 @@ const otpInputs = document.querySelectorAll(".otp-input");
 // Simulate sending OTP (in real-world, this would be a backend API call)
 let generatedOtp = "1234";
 
+// Automatically move between inputs and handle backspace navigation
+otpInputs.forEach((input, index) => {
+  input.addEventListener("input", (e) => {
+    if (input.value.length === 1 && index < otpInputs.length - 1) {
+      otpInputs[index + 1].focus();
+    }
+  });
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Backspace" && input.value === "" && index > 0) {
+      otpInputs[index - 1].focus();
+    }
+  });
+});
+
 otpRequestForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
