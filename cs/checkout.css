@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mega {
+  display: none;
+}
+.category-menu-wr:hover .mega {
+  display: block;
+}
+.mega li a:hover {
+  color: blue !important;
+}
+.category-item-2:hover .list-sub-menu {
+  display: block !important;
+}
+.list-sub-menu {
+  min-width: 300px;
+}
+.icon-container:hover {
+  background-color: #0d6efd; /* Bootstrap primary color */
+  color: white;
+  cursor: pointer;
+}
