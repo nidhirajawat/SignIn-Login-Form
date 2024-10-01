@@ -110,3 +110,23 @@
   background-color: yellow;
   border-color: yellow;
 }
+.color-filter-card .card-text:nth-child(7) {
+  color: #ffffff;
+  background-color: black;
+  border-color: black;
+}
+.color-filter-card .card-text:nth-child(8) {
+  color: white;
+  background-color: purple;
+  border-color: purple;
+}
+.color-filter-card .card-text:nth-child(9) {
+  color: white;
+  background-color: magenta;
+  border-color: magenta;
+}
+.color-filter-card .card-text:nth-child(10) {
+  color: white;
+  background-color: maroon;
+  border-color: maroon;
+}
