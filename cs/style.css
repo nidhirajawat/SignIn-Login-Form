@@ -53,3 +53,26 @@
   height: 300px;
   object-fit: cover;
 }
+.card-text {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+}
+/* .top-explore:nth-child(2) p {
+  background-color: #cdebbc;
+}
+.top-explore:nth-child(3) p {
+  background-color: #d1e8f2;
+}
+.top-explore:nth-child(4) p {
+  background-color: #cdd4f8;
+}
+.top-explore:nth-child(5) p {
+  background-color: #f6dbf6;
+}
+.top-explore:nth-child(6) p {
+  background-color: #fff2e5;
+} */
