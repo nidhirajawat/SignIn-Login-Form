@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <!-- <link rel="stylesheet" href="path-to-bootstrap.css" /> -->
+    <style>
+      .product-img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Placeholder for the product image -->
+          <!-- <img
+            id="product-image"
+            src="./assets/images/pendrive1.png"
+            alt="Product Image"
+            class="product-img"
+          /> -->
+          <a
+            href="product-details.html?image=pendrive1.png&title=Fastrack+Optimus+Pro&price=1699&ratings=31009&description=Functional+Crown%2C+BT+Calling+Smartwatch"
+          >
+            <img
+              class="card-img-top mb-2 product-img"
+              src="./assets/images/pendrive1.png"
+              alt="Title"
+            />
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h2 id="product-title">Product Title</h2>
+          <p id="product-description">Description of the product.</p>
+          <p id="product-price" class="fs-4 fw-bold">₹Price</p>
+          <p id="product-ratings">Ratings & Reviews</p>
+          <button class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/click-product.js"></script>
+  </body>
+</html>
