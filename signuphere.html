@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forgot Password - OTP Verification</title>
+    <title>SignUpHere Form</title>
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -22,6 +23,39 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./cs/style.css" />
+    <!-- Custom CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .sign-in-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+      }
+
+      .login-container .form-section {
+        flex: 1;
+        padding: 40px;
+      }
+      .login-container .welcome-section {
+        flex: 1;
+        background: linear-gradient(135deg, #ff416c, #ff4b2b);
+
+        border-radius: 0 10px 10px 0;
+      }
+
+      .form-section .btn {
+        background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      }
+      .form-section .form-check-label {
+        margin-left: 10px;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar-section-start -->
@@ -319,99 +353,84 @@
       </nav>
     </header>
     <!-- Navbar-End -->
-    <section class="otp-sec pb-5">
-      <div class="container mt-5">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="card shadow p-4">
-              <div class="card-body">
-                <h3 class="card-title text-center mb-4">Forgot Password</h3>
+    <section class="sign-in-form pb-5 pt-5">
+      <div
+        class="login-container d-flex w-50 bg-white"
+        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)"
+      >
+        <!-- Sign In Form Section -->
 
-                <!-- Phone or Email Input -->
-                <form id="otpRequestForm" class="needs-validation" novalidate>
-                  <div class="mb-4" id="phone-email-section">
-                    <label for="phoneEmail" class="form-label"
-                      >Enter Phone Number or Email</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="phoneEmail"
-                      placeholder="Enter Phone or Email"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Please provide a valid phone number or email.
-                    </div>
-                  </div>
-
-                  <!-- OTP Input Section (Hidden Initially) -->
-                  <div class="mb-4 d-none" id="otp-section">
-                    <label for="otp" class="form-label">Enter OTP</label>
-                    <div class="otp-inputs">
-                      <div class="d-flex justify-content-center mb-3">
-                        <input
-                          type="text"
-                          maxlength="1"
-                          class="form-control mx-1 otp-input"
-                        />
-                        <input
-                          type="text"
-                          maxlength="1"
-                          class="form-control mx-1 otp-input"
-                        />
-                        <input
-                          type="text"
-                          maxlength="1"
-                          class="form-control mx-1 otp-input"
-                        />
-                        <input
-                          type="text"
-                          maxlength="1"
-                          class="form-control mx-1 otp-input"
-                        />
-                      </div>
-                    </div>
-                    <div class="invalid-feedback">
-                      Please provide the correct OTP.
-                    </div>
-                  </div>
-
-                  <!-- New Password Section (Hidden Initially) -->
-                  <div class="mb-4 d-none" id="new-password-section">
-                    <label for="newPassword" class="form-label"
-                      >Enter New Password</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="newPassword"
-                      placeholder="New Password"
-                      minlength="8"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Please provide a new password with at least 8 characters.
-                    </div>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-primary btn-lg w-100"
-                    id="submitBtn"
-                  >
-                    Send OTP
-                  </button>
-                </form>
-              </div>
+        <div class="form-section">
+          <h2>Signup</h2>
+          <form>
+            <div class="">
+              <label for="username" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="username"
+                placeholder="Enter your full name"
+              />
             </div>
-          </div>
+            <div class="">
+              <label for="password" class="form-label">Email</label>
+              <input
+                type="password"
+                class="form-control mb-2"
+                id="password"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="">
+              <label for="password" class="form-label">Phone Number</label>
+              <input
+                type="password"
+                class="form-control mb-2"
+                id="password"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control mb-2"
+                id="password"
+                placeholder="Enter your password"
+              />
+            </div>
+            <div class="">
+              <label for="password" class="form-label">Confirm Password</label>
+              <input
+                type="password"
+                class="form-control mb-2"
+                id="password"
+                placeholder="Confirm your password"
+              />
+            </div>
+
+            <button type="submit" class="btn border-0 w-100 text-white">
+              Signup
+            </button>
+            <a href="otp.html" class="forgot-password d-inline-block mt-3"
+              >Forgot Password?</a
+            >
+          </form>
+        </div>
+
+        <!-- Welcome Section -->
+        <div
+          class="welcome-section text-center d-flex justify-content-center align-items-center flex-column p-5 text-white"
+        >
+          <h2>Welcome to Login</h2>
+          <p>Already have an account?</p>
+          <a href="login2.html" class="btn btn-light">Login Now</a>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer id="footer1 py-5">
+    <footer id="footer1 py-3">
       <div class="container-fluid bg-light text-white py-3">
         <div class="row">
           <div class="col-lg-4">
@@ -529,7 +548,7 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
